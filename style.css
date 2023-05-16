@@ -193,6 +193,8 @@ aside a {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 0.5rem;
+  aspect-ratio: 2/2;
+  object-fit: cover;
 }
 
 
