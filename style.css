@@ -275,7 +275,7 @@ aside a {
     }
 } */
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 500px){
   #prompt {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
