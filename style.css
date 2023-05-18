@@ -149,7 +149,6 @@ aside a {
   padding-left: 1rem;
   max-width: 50vw;
   width: 500px;
-
 }
 
 #cta h1 {
@@ -228,7 +227,7 @@ aside a {
 
 .pleft {
   padding: 10px 0px 10px 20px;
-  color: rgba(0, 0, 0, 0.500);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #principal .principal .introduction h2 {
@@ -247,10 +246,8 @@ aside a {
   object-fit: cover;
 }
 
-
 #meet-team {
   padding: 3rem 0 0 0;
-
 }
 
 #meet-team .team-member-wrapper {
@@ -268,30 +265,36 @@ aside a {
 }
 
 #meet-team .team-member:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#000), to(rgba(0, 0, 0, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#000),
+    to(rgba(0, 0, 0, 0))
+  );
   background: linear-gradient(0deg, #000 0, rgba(0, 0, 0, 0) 100%);
 }
 
 #meet-team .team-member:first-of-type {
-  background-image: url('images/Devanshi Chola.webp');
+  background-image: url("images/Devanshi Chola.webp");
 }
 
 #meet-team .team-member:nth-of-type(2) {
-  background-image: url('images/Neha Tomar.jpg');
+  background-image: url("images/Neha Tomar.jpg");
 }
 
 #meet-team .team-member:nth-of-type(3) {
-  background-image: url('images/Aryan Singh.webp');
+  background-image: url("images/Aryan Singh.webp");
 }
 
 #meet-team .team-member:last-of-type {
-  background-image: url('images/Yash Jain.webp');
+  background-image: url("images/Yash Jain.webp");
 }
 
 #meet-team .team-member img {
@@ -306,7 +309,6 @@ aside a {
   color: #fff;
 }
 
-
 #meet-team h1 {
   font-size: 2.5rem;
   font-weight: 900;
@@ -320,9 +322,6 @@ aside a {
 .port {
   display: none;
 }
-
-
-
 
 @media all and (max-width: 1200px) {
   header img {
@@ -346,7 +345,6 @@ aside a {
   #cta p {
     padding: 0.3rem 0;
   }
-
 }
 
 @media all and (max-width: 920px) {
@@ -383,7 +381,6 @@ aside a {
   #meet-team .team-member {
     margin: 10px;
   }
-
 }
 
 @media all and (max-width: 768px) {
@@ -407,6 +404,9 @@ aside a {
 }
 
 @media all and (max-width: 500px) {
+  header img {
+    width: 100px;
+  }
   #prompt {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -435,7 +435,7 @@ aside a {
 
   #cta a {
     margin-top: 0rem;
-    padding: 0.4rem 1.2rem
+    padding: 0.4rem 1.2rem;
   }
 
   #ham i {
@@ -447,7 +447,7 @@ aside a {
     width: 100%;
   }
 
-  #principal .principal img{
+  #principal .principal img {
     max-width: 100%;
   }
 
@@ -461,7 +461,7 @@ aside a {
     flex-direction: column;
   }
 
-  #meet-team h1{
+  #meet-team h1 {
     font-size: 2rem;
   }
 
