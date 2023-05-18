@@ -442,6 +442,15 @@ aside a {
     font-size: 1.5rem;
   }
 
+  #principal .principal .left,
+  #principal .principal .right {
+    width: 100%;
+  }
+
+  #principal .principal img{
+    max-width: 100%;
+  }
+
   .principal:first-of-type {
     display: flex;
     flex-direction: column-reverse;
