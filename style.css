@@ -5,21 +5,26 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
 }
+
 body {
   /* background-color: rgba(229, 221, 208, 0.67); */
   /* background-color: #e5ddd0; */
 }
+
 a {
   text-decoration: none;
   display: inline-block;
 }
+
 ul {
   list-style: none;
 }
+
 img {
   width: 100%;
   height: 100%;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -30,9 +35,11 @@ header {
   z-index: 9;
   width: 100%;
 }
+
 header img {
   width: 150px;
 }
+
 aside {
   display: flex;
   width: 100%;
@@ -45,37 +52,47 @@ aside {
   top: -100vh;
   transition: top 0.55s ease-out;
 }
+
 aside nav {
   display: none;
 }
+
 @keyframes showMenu {
   0% {
     top: -100vh;
   }
+
   30% {
     top: 0;
   }
+
   50% {
     top: -15vh;
   }
+
   70% {
     top: 0;
   }
+
   80% {
     top: -5vh;
   }
+
   100% {
     top: 0;
   }
 }
+
 @keyframes hideMenu {
   0% {
     top: 0;
   }
+
   100% {
     top: -100vh;
   }
 }
+
 aside a {
   color: #fff;
   padding: 0.5rem;
@@ -84,6 +101,7 @@ aside a {
   font-size: 1.25rem;
   margin: 0.5rem;
 }
+
 #close {
   cursor: pointer;
   position: absolute;
@@ -92,11 +110,13 @@ aside a {
   color: #fff;
   font-size: 4rem;
 }
+
 #ham {
   position: absolute;
   right: 2rem;
   top: 40%;
 }
+
 #ham i {
   font-size: 2rem;
   color: #000;
@@ -112,6 +132,7 @@ aside a {
   align-items: center;
   padding: 0.5rem 2rem;
 }
+
 #hero::before {
   content: "";
   position: absolute;
@@ -121,22 +142,26 @@ aside a {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 #cta {
   position: relative;
   padding-top: 1rem;
   padding-left: 1rem;
   max-width: 50vw;
   width: 500px;
-  
+
 }
+
 #cta h1 {
   font-size: 3rem;
   font-weight: 900;
   text-transform: capitalize;
 }
+
 #cta p {
   padding: 0.5rem 0;
 }
+
 #cta a {
   border: 4px solid #000;
   padding: 0.75rem 2rem;
@@ -156,6 +181,7 @@ aside a {
   padding: 5rem 0;
   text-align: center;
 }
+
 #prompt h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -163,25 +189,48 @@ aside a {
   margin-bottom: 3rem;
   word-spacing: 10px;
 }
+
 #prompt p {
   font-size: 14px;
+}
+
+#principal {
+  background-color: rgba(229, 221, 208, 0.67);
+}
+
+#principal h1 {
+  text-align: center;
+  padding: 1rem 0rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
 
 #principal .principal {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(229, 221, 208, 0.67);
+
   padding: 4rem 2rem;
 }
+
 #principal .principal .left,
 #principal .principal .right {
-  width: 40%;
+  width: 50%;
 }
 
 #principal .principal .introduction {
-  text-align: center;
+  text-align: justify;
+  margin: 0 4rem;
+  padding: 1rem 0;
 }
+
+.pleft {
+  padding: 10px 0px 10px 20px;
+  color: rgba(0, 0, 0, 0.500);
+}
+
 #principal .principal .introduction h2 {
   font-weight: 700;
   letter-spacing: 2px;
@@ -199,45 +248,57 @@ aside a {
 }
 
 
-#meet-team{
+#meet-team {
   padding: 3rem 0 0 0;
+
 }
+
 #meet-team .team-member-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
+
 #meet-team .team-member {
-  width: 50%;
+  width: 45%;
   max-height: 500px;
   background: #000;
   position: relative;
+  margin: 20px;
 }
-#meet-team .team-member:before{
+
+#meet-team .team-member:before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear,left top,right top,from(#000),to(rgba(0,0,0,0)));
-  background: linear-gradient(0deg,#000 0,rgba(0,0,0,0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #000 0, rgba(0, 0, 0, 0) 100%);
 }
-#meet-team .team-member:first-of-type{
+
+#meet-team .team-member:first-of-type {
   background-image: url('images/Devanshi Chola.webp');
 }
-#meet-team .team-member:nth-of-type(2){
+
+#meet-team .team-member:nth-of-type(2) {
   background-image: url('images/Neha Tomar.jpg');
 }
-#meet-team .team-member:nth-of-type(3){
+
+#meet-team .team-member:nth-of-type(3) {
   background-image: url('images/Aryan Singh.webp');
 }
-#meet-team .team-member:last-of-type{
+
+#meet-team .team-member:last-of-type {
   background-image: url('images/Yash Jain.webp');
 }
-#meet-team .team-member img{
+
+#meet-team .team-member img {
   object-fit: cover;
 }
-#meet-team .team-member .content{
+
+#meet-team .team-member .content {
   position: absolute;
   bottom: 2rem;
   width: 100%;
@@ -255,21 +316,33 @@ aside a {
   letter-spacing: 1px;
 }
 
+/* changes in drop about us & portfolio */
+.port {
+  display: none;
+}
+
+
+
+
 @media all and (max-width: 1200px) {
   header img {
-    width: 70px;
+    width: 100px;
   }
+
   #cta {
     padding-top: 3rem;
   }
-  #cta h1{
+
+  #cta h1 {
     font-size: 2rem;
     margin-top: 2rem;
   }
-  #cta a{
+
+  #cta a {
     margin-top: 0rem;
     padding: 0.45rem 1.5rem;
   }
+
   #cta p {
     padding: 0.3rem 0;
   }
@@ -280,57 +353,124 @@ aside a {
   header img {
     width: 70px;
   }
+
   #cta {
     max-width: 100vw;
     padding-top: 3rem;
   }
-  #cta h1{
-    font-size: 1.75rem;
+
+  #cta h1 {
     margin-top: 1rem;
-   
   }
+
   #cta a {
     margin-top: 0.5rem;
     font-size: 0.75rem;
     padding: 0.5rem 1.5rem;
   }
+
+  #principal .principal {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #principal .principal .introduction {
+    width: 60%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  #meet-team .team-member {
+    margin: 10px;
+  }
+
 }
 
-/* @media all and (max-width: 768px){
-    #hero{
-        height: auto;
-    }
-} */
-
-@media all and (max-width: 600px){
-  #principal .principal .left, #principal .principal .right{
-    width: 100%;
-  }
-  #principal .principal img{
-    max-width: 100%;
-    height: 250px;
-  }
-  #principal .principal{
+@media all and (max-width: 768px) {
+  #principal .principal:first-of-type {
     flex-direction: column-reverse;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  }
+
+  #principal .principal {
+    flex-direction: column;
+  }
+
+  #principal .principal .left,
+  #principal .principal .right {
+    width: 70%;
+  }
+
+  #principal .principal .introduction {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-@media all and (max-width: 500px){
+@media all and (max-width: 500px) {
   #prompt {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    min-width: auto;
   }
+
   #prompt h1 {
     font-size: 1.25rem;
     word-spacing: normal;
     line-height: normal;
   }
+
   #prompt h1,
   #prompt p {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  header img {
+    width: 50px;
+  }
+
+  #cta h1 {
+    font-size: 1.75rem;
+    margin-top: 0.75rem;
+  }
+
+  #cta a {
+    margin-top: 0rem;
+    padding: 0.4rem 1.2rem
+  }
+
+  #ham i {
+    font-size: 1.5rem;
+  }
+
+  .principal:first-of-type {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #meet-team h1{
+    font-size: 2rem;
+  }
+
+  #meet-team .team-member {
+    margin: 5px;
+  }
+
+  #meet-team .team-member .content {
+    bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #meet-team .team-member .content h2 {
+    font-size: 16px;
+  }
+
+  #meet-team .team-member .content h4 {
+    font-size: 14px;
   }
 }
