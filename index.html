@@ -29,14 +29,14 @@
           <ul>
             <li><a href="">Home</a></li>
             <li>
-              <a href="">About Us</a>
-              <ul>
+              <a href="" class="pf">About Us <span class="drop"><i class="fa-solid fa-chevron-down" style="color: white;"></i></span></a>
+              <ul class="port">
                 <li><a href="">Meet Our Team</a></li>
               </ul>
             </li>
             <li>
-              <a href="">Portfolio</a>
-              <ul>
+              <a href="" class="pf">Portfolio  <span class="drop"><i class="fa-solid fa-chevron-down" style="color: white;"></i></span></a>
+              <ul class="port">
                 <li><a href="">Residential</a></li>
                 <li><a href="">Commercial</a></li>
               </ul>
@@ -68,10 +68,22 @@
       </section>
 
       <section id="principal">
+        <h1>About us</h1>
+        
         <div class="principal">
+          
           <div class="left introduction">
             <h2>Aadya Duggal</h2>
-            <p>Principal Designer</p>
+            <h2>Principal Designer</h2>
+            <p>Aadya strongly believes that every project should be designed contextually evolving spaces
+              that are perceived in new ways. Each design takes cognizes of the climate and integrates
+              sustainability in cohesive way.</p>
+            <p class="pleft">As she puts it, just like a good host my job is to anticipate the needs of my clients and I spend
+              a lot of time and energy understanding their lifestyle and their habits.</p>
+            <p>
+              Graduated from Sushant school of Design, Gurugram in 2018. She worked with Essentia
+Environments and The Workroom, Gurugram. Has a 5 years of work experience
+            </p>
           </div>
           <div class="right">
             <img src="images/Aadya Duggal.jpg" alt="" class="polygon">
@@ -83,7 +95,15 @@
           </div>
           <div class="right introduction">
             <h2>Sanuj Gupta</h2>
-            <p>Principal Designer</p>
+            <h2>Principal Designer</h2>
+            <p>Sanuj is known for his simplicity in his design approach. Juxtaposes the orthogonal nature of
+              clean lines with a luxurious mix of materials colors and texture in order to create a distinct
+              look for each project.</p>
+            <p class="pleft">His belief is that &quot;design can be art, design can be aesthetics. good design is always simple
+              and yet so complicated to execute.&quot; He also believes building spaces is a team effort.</p>
+            <p>Graduated from Arch college of Design and Business, Jaipur in 2019. He worked with BG
+              associates and Yukti Interiors, Jaipur and The Workroom, Gurugram. Has a 4 years of work
+              experience.</p>
           </div>
         </div>
       </section>
@@ -116,7 +136,7 @@
             <img src="images/Yash Jain.webp" alt="">
             <div class="content">
               <h2>Yash Jain</h2>
-              <h4>CEO</h4>
+              <h4>Interior Designer</h4>
             </div>
           </div>
         </div>
@@ -126,16 +146,40 @@
       const hamburger = document.querySelector("#ham");
       const aside = document.querySelector("aside");
       const close = document.querySelector("close");
+      const port = document.querySelectorAll(".port")
+      const anc = document.querySelectorAll(".pf")
+      const drop = document.querySelectorAll(".fa-solid")
       hamburger.addEventListener("click", (e) => {
         e.preventDefault();
         aside.children[1].style.display = "block"
         aside.style.animation = "showMenu 1s linear forwards";
       });
-      function hideMenu() {
+      function hideMenu () {
         aside.removeAttribute("style");
         aside.style.animation = "hideMenu 0.5s linear forwards";
         aside.children[1].style.display = "none"
       }
+            
+      
+      for(let i=0; i<=1;i++){
+        anc[i].onclick = show 
+        function show (e){
+          e.preventDefault()
+          if(drop[i].classList.contains("fa-chevron-down")){
+            port[i].style.display = "block"
+            drop[i].classList.remove("fa-chevron-down")
+            drop[i].classList.add("fa-chevron-up")
+
+          }
+          else{
+            port[i].style.display = "none"
+            drop[i].classList.remove("fa-chevron-up")
+            drop[i].classList.add("fa-chevron-down")
+
+          }
+        }
+      }
+     
     </script>
   </body>
 </html>
