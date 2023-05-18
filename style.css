@@ -302,10 +302,26 @@ aside a {
     }
 } */
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px){
+  #principal .principal .left, #principal .principal .right{
+    width: 100%;
+  }
+  #principal .principal img{
+    max-width: 100%;
+    height: 250px;
+  }
+  #principal .principal{
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 500px){
   #prompt {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    min-width: auto;
   }
   #prompt h1 {
     font-size: 1.25rem;
@@ -316,19 +332,5 @@ aside a {
   #prompt p {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  header img {
-    width: 50px;
-  }
-  #cta h1{
-    font-size: 1.75rem;
-    margin-top: 0.75rem;
-  }
-  #cta a {
-    margin-top: 0rem;
-    padding: 0.4rem 1.2rem
-  }
-  #ham i {
-    font-size: 1.5rem;
   }
 }
