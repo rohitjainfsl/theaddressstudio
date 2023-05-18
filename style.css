@@ -405,7 +405,7 @@ aside a {
 
 @media all and (max-width: 500px) {
   header img {
-    width: 100px;
+    width: 150px;
   }
   #prompt {
     padding-top: 2.5rem;
