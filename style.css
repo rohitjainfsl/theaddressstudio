@@ -101,17 +101,6 @@ aside a {
   font-size: 1.25rem;
   margin: 0.5rem;
 }
-aside .port {
-  background-color: rgba(0,0,0,0.3);
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-aside .port.visible{
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-}
 
 #close {
   cursor: pointer;
@@ -160,6 +149,7 @@ aside .port.visible{
   padding-left: 1rem;
   max-width: 50vw;
   width: 500px;
+
 }
 
 #cta h1 {
@@ -204,41 +194,21 @@ aside .port.visible{
   font-size: 14px;
 }
 
-#principal {
-  background-color: rgba(229, 221, 208, 0.67);
-}
-
-#principal h1 {
-  text-align: center;
-  padding: 1rem 0rem;
-  font-size: 2.5rem;
-  font-weight: 800;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-}
-
 #principal .principal {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: rgba(229, 221, 208, 0.67);
   padding: 4rem 2rem;
 }
 
 #principal .principal .left,
 #principal .principal .right {
-  width: 50%;
+  width: 40%;
 }
 
 #principal .principal .introduction {
-  text-align: justify;
-  margin: 0 4rem;
-  padding: 1rem 0;
-}
-
-.pleft {
-  padding: 10px 0px 10px 20px;
-  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 #principal .principal .introduction h2 {
@@ -257,6 +227,7 @@ aside .port.visible{
   object-fit: cover;
 }
 
+
 #meet-team {
   padding: 3rem 0 0 0;
 }
@@ -264,48 +235,40 @@ aside .port.visible{
 #meet-team .team-member-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 #meet-team .team-member {
-  width: 45%;
+  width: 50%;
   max-height: 500px;
   background: #000;
   position: relative;
-  margin: 20px;
 }
 
 #meet-team .team-member:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#000),
-    to(rgba(0, 0, 0, 0))
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#000), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, #000 0, rgba(0, 0, 0, 0) 100%);
 }
 
 #meet-team .team-member:first-of-type {
-  background-image: url("images/Devanshi Chola.webp");
+  background-image: url('images/Devanshi Chola.webp');
 }
 
 #meet-team .team-member:nth-of-type(2) {
-  background-image: url("images/Neha Tomar.jpg");
+  background-image: url('images/Neha Tomar.jpg');
 }
 
 #meet-team .team-member:nth-of-type(3) {
-  background-image: url("images/Aryan Singh.webp");
+  background-image: url('images/Aryan Singh.webp');
 }
 
 #meet-team .team-member:last-of-type {
-  background-image: url("images/Yash Jain.webp");
+  background-image: url('images/Yash Jain.webp');
 }
 
 #meet-team .team-member img {
@@ -320,6 +283,7 @@ aside .port.visible{
   color: #fff;
 }
 
+
 #meet-team h1 {
   font-size: 2.5rem;
   font-weight: 900;
@@ -329,14 +293,93 @@ aside .port.visible{
   letter-spacing: 1px;
 }
 
-/* changes in drop about us & portfolio */
-/* .port {
-  display: none;
-} */
+#contact-us {
+  background-color: lightgrey;
+  padding: 20px 70px;
+  display: flex;
+}
+
+.sendmsg {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+.sendmsg form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sendmsg form input {
+     height: 58px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 14px;
+}
+.sendmsg form textarea{
+  width: 80%;
+  margin-top: 14px;
+  padding: 10px;
+}
+.sendmsg form button{
+  margin-top: 15px;
+  height: 44px;
+  width: 20%;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+
+.contact-detail {
+  width: 50%;
+  background-color: rgba(229, 221, 208, 0.67);
+  padding: 20px 50px;
+}
+
+.details{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icons-detail{
+  width: 100%;
+  height: 88px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icons-detail a{
+  font-size: 24px;
+  width: 20%;
+}
+.icons-detail .info{
+  width: 80%;
+}
+
+.follow-us{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow-us .social-acount a{
+  font-size: 35px;
+  margin: 5px 12px;
+  color: black;
+}
+
+
 
 @media all and (max-width: 1200px) {
   header img {
-    width: 100px;
+    width: 70px;
   }
 
   #cta {
@@ -356,6 +399,18 @@ aside .port.visible{
   #cta p {
     padding: 0.3rem 0;
   }
+  .icons-detail a {
+    font-size: 24px;
+    width: 14%;
+  }
+  .contact-detail {
+    padding: 20px 10px;
+}
+.sendmsg{
+  padding: 20px 10px;
+
+}
+
 }
 
 @media all and (max-width: 920px) {
@@ -369,7 +424,9 @@ aside .port.visible{
   }
 
   #cta h1 {
+    font-size: 1.75rem;
     margin-top: 1rem;
+
   }
 
   #cta a {
@@ -377,50 +434,87 @@ aside .port.visible{
     font-size: 0.75rem;
     padding: 0.5rem 1.5rem;
   }
-
-  #principal .principal {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  #principal .principal .introduction {
-    width: 60%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  #meet-team .team-member {
-    margin: 10px;
+  #contact-us {
+    padding: 20px 28px;
   }
 }
 
-@media all and (max-width: 768px) {
-  #principal .principal:first-of-type {
-    flex-direction: column-reverse;
-  }
-
-  #principal .principal {
+@media all and (max-width:800px){
+  #contact-us{
     flex-direction: column;
   }
+  .sendmsg {
+    width: 100%;
+    padding: 20px 38px;
+}
+.contact-detail {
+  width: 100%;
+  padding: 20px 38px;
+}
+.icons-detail{
+  font-size: 11px;
+  width: 46%;
+}
+#contact-us {
+  padding: 20px 23px;
+}
+.sendmsg form{
+  margin-top: 0;
+}
+}
+
+/* @media all and (max-width: 768px){
+    #hero{
+        height: auto;
+    }
+} */
+
+@media all and (max-width: 600px) {
 
   #principal .principal .left,
   #principal .principal .right {
-    width: 70%;
+    width: 100%;
   }
 
-  #principal .principal .introduction {
-    margin-left: 0;
-    margin-right: 0;
+  #principal .principal img {
+    max-width: 100%;
+    height: 250px;
   }
+
+  #principal .principal {
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #contact-us {
+    padding: 0;
+  }
+  .icons-detail {
+    font-size: 11px;
+    width: 100%;
+    height: 50px;
+    margin-top: 9px;
+}
+.follow-us {
+  margin-top: 7px;
+}
+.sendmsg form input {
+  height: 41px;
+  width: 100%;
+}
+.sendmsg form textarea{
+width: 100%;
+}
+.sendmsg form button{
+  width: 28%;
+}
 }
 
 @media all and (max-width: 500px) {
-  header img {
-    width: 150px;
-  }
   #prompt {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    min-width: auto;
   }
 
   #prompt h1 {
@@ -435,6 +529,10 @@ aside .port.visible{
     padding-right: 15px;
   }
 
+  header img {
+    width: 50px;
+  }
+
   #cta h1 {
     font-size: 1.75rem;
     margin-top: 0.75rem;
@@ -442,51 +540,38 @@ aside .port.visible{
 
   #cta a {
     margin-top: 0rem;
-    padding: 0.4rem 1.2rem;
+    padding: 0.4rem 1.2rem
   }
 
   #ham i {
     font-size: 1.5rem;
   }
 
-  #principal .principal .left,
-  #principal .principal .right {
-    width: 100%;
-  }
-
-  #principal .principal img {
-    max-width: 100%;
-  }
-
-  .principal:first-of-type {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .principal {
-    display: flex;
+  #meet-team .team-member-wrapper {
     flex-direction: column;
   }
 
-  #meet-team h1 {
-    font-size: 2rem;
-  }
-
   #meet-team .team-member {
-    margin: 5px;
+    width: 100%;
   }
-
-  #meet-team .team-member .content {
-    bottom: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  .sendmsg form input {
+    height: 41px;
+    width: 100%;
   }
-
-  #meet-team .team-member .content h2 {
-    font-size: 16px;
+  .sendmsg form textarea{
+  width: 100%;
   }
+  .sendmsg form button{
+    width: 28%;
+  }
+  
+}
 
-  #meet-team .team-member .content h4 {
-    font-size: 14px;
+@media all and (max-width : 400px){
+  .contact-detail {
+    padding: 20px 11px;
+  }
+  .sendmsg{
+    padding: 20px 11px;
   }
 }
