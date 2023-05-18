@@ -101,6 +101,17 @@ aside a {
   font-size: 1.25rem;
   margin: 0.5rem;
 }
+aside .port {
+  background-color: rgba(0,0,0,0.3);
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+aside .port.visible{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
 
 #close {
   cursor: pointer;
@@ -319,9 +330,9 @@ aside a {
 }
 
 /* changes in drop about us & portfolio */
-.port {
+/* .port {
   display: none;
-}
+} */
 
 @media all and (max-width: 1200px) {
   header img {
